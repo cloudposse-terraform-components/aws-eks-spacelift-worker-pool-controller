@@ -1,4 +1,4 @@
-output "mock" {
-  description = "Mock output example for the Cloud Posse Terraform component template"
-  value       = local.enabled ? "hello ${basename(abspath(path.module))}" : ""
+output "spacelift_worker_pool_controller_metadata" {
+  value       = module.spacelift_worker_pool_controller.metadata
+  description = "Block status of the deployed Spacelift worker pool Kubernetes controller"
 }
