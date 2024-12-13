@@ -6,7 +6,7 @@ tags:
   - provider/helm
 ---
 
-# Component: `eks`
+# Component: `eks-spacelift-worker-pool-controller`
 
 This component provisions the controller part of the
 [Kubernetes Operator](https://docs.spacelift.io/concepts/worker-pools/kubernetes-workers#kubernetes-workers) for
