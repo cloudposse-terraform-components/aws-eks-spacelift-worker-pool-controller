@@ -15,7 +15,6 @@ installed in the cluster before installing the `eks/spacelift-worker-pool` compo
 
 The `eks/spacelift-worker-pool-controller` component must be provisioned only once per EKS cluster. You can deploy the
 `eks/spacelift-worker-pool` component multiple times.
-
 ## Usage
 
 **Stack Level**: Regional
@@ -44,18 +43,8 @@ components:
         chart_values: {}
 ```
 
-## References
 
-- https://docs.spacelift.io/concepts/worker-pools#kubernetes
-- https://docs.spacelift.io/integrations/docker#customizing-the-runner-image
-- https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/worker_pool
-- https://docs.spacelift.io/concepts/worker-pools#installation
-- https://github.com/spacelift-io/spacelift-helm-charts/tree/main/spacelift-workerpool-controller
-- https://github.com/spacelift-io/spacelift-helm-charts/blob/main/spacelift-workerpool-controller/values.yaml
-- https://github.com/hashicorp/terraform-provider-kubernetes/issues/1367
-
-<!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -139,7 +128,29 @@ components:
 | Name | Description |
 |------|-------------|
 | <a name="output_spacelift_worker_pool_controller_metadata"></a> [spacelift\_worker\_pool\_controller\_metadata](#output\_spacelift\_worker\_pool\_controller\_metadata) | Block status of the deployed Spacelift worker pool Kubernetes controller |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
+
+## References
+
+
+- [Spacelift Worker Pools (Kubernetes)](https://docs.spacelift.io/concepts/worker-pools#kubernetes) - 
+
+- [Customize Runner Image](https://docs.spacelift.io/integrations/docker#customizing-the-runner-image) - 
+
+- [Terraform: spacelift_worker_pool](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/worker_pool) - 
+
+- [Spacelift Worker Pools Installation](https://docs.spacelift.io/concepts/worker-pools#installation) - 
+
+- [Spacelift Helm Charts: workerpool-controller](https://github.com/spacelift-io/spacelift-helm-charts/tree/main/spacelift-workerpool-controller) - 
+
+- [Helm values: workerpool-controller](https://github.com/spacelift-io/spacelift-helm-charts/blob/main/spacelift-workerpool-controller/values.yaml) - 
+
+- [Terraform Provider Kubernetes Issue #1367](https://github.com/hashicorp/terraform-provider-kubernetes/issues/1367) - 
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-eks-spacelift-worker-pool-controller&utm_content=)
+
